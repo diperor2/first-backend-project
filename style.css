@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box; /* Упрощает управление размерами элементов */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Распределение элементов по краям */
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для навигации */
+}
+
+.dog-icon {
+    width: 50px;
+    height: auto;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Плавный переход для цвета и трансформации */
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Изменение цвета при наведении */
+    transform: scale(1.1); /* Увеличение ссылки при наведении */
+}
+
+h1 {
+    margin-top: 20px; /* Отступ сверху для заголовка */
+    font-size: 36px; /* Размер шрифта заголовка */
+}
+
+main {
+    padding: 20px;
+}
+
+.dog-info {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Плавный переход для эффекта наведения */
+    margin-bottom: 20px; /* Отступ между карточками */
+}
+
+.dog-info:hover {
+    transform: translateY(-5px); /* Подъем карточки при наведении */
+}
+
+.dog-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
